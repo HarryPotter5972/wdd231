@@ -1,0 +1,60 @@
+{
+    "businesses": [
+        {
+            "name": "Wal-mart Supercenter",
+            "address": "13502 S Hamilton View Rd, Riverton UT 84065",
+            "phone": "(801) 446-2981",
+            "url": "https://www.walmart.com",
+            "icon": "./images/walmart.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Home Depot",
+            "address": "3852 13400 S, Riverton, UT 84065",
+            "phone": "(801) 254-5762",
+            "url" : "https://www.homedepot.com",
+            "icon": "./images/homedepot.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name" : "Peterson's",
+            "address" : "1784 W 12600 S, Riverton, UT 84065",
+            "phone" : "(801) 254-0761",
+            "url" : "https://www.petersonsfreshmarket.com",
+            "icon": "./images/petersons.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name" : "Kentucky Fried Chicken (KFC)",
+            "address" : "1827 W 12600, Riverton, UT 84065",
+            "phone" : "(801) 446-7080",
+            "url" : "locations.kfc.com",
+            "icon" : "./images/kfc.jpg",
+            "membershipLevel" : 1
+        },
+        {
+            "name" : "Arby's",
+            "address" : "1731 W 12600 S, Riverton, UT 84065",
+            "phone" : "(801) 446-9300",
+            "url" : "https://www.arbys.com",
+            "icon" : "./images/arbys.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name" : "Cinemark Riverton and XD",
+            "address" : "13257 S Teal Rdg Wy, Riverton, UT 84096",
+            "phone" : "(801) 938-5700",
+            "url" : "https://www.cinemark.com",
+            "icon" : "./images/cinemark.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name" : "Wendy's",
+            "address" : "1938 W 12600 S, Riverton, UT 84065",
+            "phone" : "(801) 446-3884",
+            "url": "https://locations.wendys.com",
+            "icon": "./images/wendys.jpg",
+            "membershipLevel": 3
+        }
+    ]
+}

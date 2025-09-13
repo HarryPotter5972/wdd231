@@ -1,0 +1,78 @@
+@media screen and (min-width:560px) {
+    header, main, footer {
+        max-width: 960px;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .res-grid, div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #hamburgerMenu{
+        display: none;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .navbar, .classFilters {
+        display: flex;
+    }
+    .navbar ul, .classFilters ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    
+    .classFilters ul {
+        flex: 1;
+    }
+
+    .classFilters li {
+        border: 3px solid white;
+        justify-content: space-between;
+        flex: 1;
+        display: flex;
+    }
+    .navbar a, .classFilters a {
+        text-align: center;
+    }
+    .courses {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    header, main, footer {
+        max-width: 2000px;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar, .classFilters {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar li, .classFilters li {
+        display: block;
+    }
+    .res-grid, div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #hamburgerMenu {
+        display: none;
+    }
+    section {
+        border: 2px solid black;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
