@@ -80,3 +80,33 @@ nav {
 .resgrid section {
     display: flex;
 }
+.weather #description {
+    text-transform: capitalize;
+    margin: .3rem 0;
+    font-size: 1.5rem;
+}
+.weather #temperature{
+    font-size: 2rem;
+    margin: .3rem 0
+}
+.weather #weatherGraphic {
+    display: block ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+}
+.weather {
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+.hero-banner {
+    display: block;
+    text-align: center;
+}
+.hero-banner .hero-img {
+    width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width = device-width, initial-scale=1.0">
-        <title>Directory</title>
-        <meta name="description" content="">
+        <title>Riverton Chamber of Commerse</title>
+        <meta name="description" content="My chamber of commerse ">
         <meta name="author" content="Brandon Baggaley">
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/styles-large.css">
-        <script src="scripts/directory.js" defer></script>
+        <script src="scripts/index.js" defer></script>
         <meta property="og:title" content="Meta">
         <meta property="og:description" content="">
         <meta property="og:url" content="https://www.facebook.com">
         <meta property="og:image" content="">
-
     </head>
     <body>
         <header>
@@ -21,8 +20,8 @@
             <button id="hamburgerMenu"></button>
             <nav class="navbar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Directory</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="">Join</a></li>
                     <li><a href="">Discover</a></li>
                 </ul>
@@ -30,14 +29,20 @@
         </header>
         <main>
             <h1>Home</h1>
+            <div class="hero-banner">
+                <img src="images/rivertoncityhall.jpg" alt="heroImg" class="hero-img">
+                <p><a href="">Join the Chamber of Commerse!!!</a></p>
+            </div>
             <div>
                 <section>
                     <h2>Events</h2>
                     <p></p>
                 </section>
-                <section>
+                <section class="weather">
                     <h2>Current Weather</h2>
-                    <p></p>
+                    <img id="weatherGraphic" src="" alt="">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
 
                 </section>
                 <section>

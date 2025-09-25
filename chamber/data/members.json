@@ -46,7 +46,7 @@
             "phone" : "(801) 938-5700",
             "url" : "https://www.cinemark.com",
             "icon" : "./images/cinemark.jpg",
-            "membershipLevel": 2
+            "membershipLevel": 1
         },
         {
             "name" : "Wendy's",
@@ -54,7 +54,7 @@
             "phone" : "(801) 446-3884",
             "url": "https://locations.wendys.com",
             "icon": "./images/wendys.jpg",
-            "membershipLevel": 3
+            "membershipLevel": 2
         }
     ]
 }

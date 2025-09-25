@@ -75,4 +75,7 @@
         flex-direction: column;
         justify-content: center;
     }
+    .hero-banner .hero-img {
+        width: 50rem;
+    }
 }
