@@ -6,7 +6,7 @@
 :root {
     font-family: "Times New Roman", Times, serif;
     background-color: gray;
-    color: white;
+    color: gold;
 }
 header {
     background-color: blue;
@@ -14,7 +14,7 @@ header {
     grid-gap: 1rem;
     padding: 20px;
     border: 1px solid black;
-    box-shadow: 0 0 30px white;
+    box-shadow: 0 0 30px red;
 }
 header, main, footer {
     max-width: 480px;
@@ -110,4 +110,34 @@ nav {
     margin-left: auto;
     margin-right: auto;
     border: 5px solid black;
+}
+
+.socialMedia a image {
+    display: block;
+    width: 5rem;
+    height: auto;
+}
+form {
+    background-color: blue;
+}
+fieldset {
+    border-color: gold;
+}
+.form {
+    grid-column: 0/3;
+}
+footer div a img {
+    height: 6rem;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#animation {
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }

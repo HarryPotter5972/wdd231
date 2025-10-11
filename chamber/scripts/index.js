@@ -3,6 +3,8 @@ let lastModified = document.querySelector("#lastModified");
 const hamButton = document.querySelector("#hamburgerMenu");
 const navbar = document.querySelector(".navbar");
 
+lastModified.innerHTML = new Date(document.lastModified);
+
 const myCity = document.querySelector("#town");
 const myDescription = document.querySelector("#description");
 const myTemperature = document.querySelector("#temperature");
@@ -14,6 +16,7 @@ const myLong = "-111.9391"
 
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
+const url2 = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${myLat}&lon=${myLong}&cnt=${4}&appid=${myKey}&units=imperial`
 
 async function makeRandomData() {
     const response = await fetch("./data/members.json");
@@ -27,6 +30,13 @@ async function apiFetch(){
         const data = await response.json();
         console.log(data);
         displayResults(data);
+    }
+}
+async function weatherForcast() {
+    const response = await fetch(url2);
+    if (response.ok) {
+        const data = await response.json();
+        console.log(data);
     }
 }
 
@@ -80,3 +90,5 @@ function displayResults(weatherInfo) {
 makeRandomData();
 
 apiFetch();
+
+weatherForcast();
