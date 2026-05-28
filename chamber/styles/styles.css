@@ -8,6 +8,9 @@
     background-color: purple;
     color: gold;
 }
+body {
+    display: list-item;
+}
 header {
     background-color: blue;
     display: grid;
