@@ -5,7 +5,7 @@
 }
 :root {
     font-family: "Times New Roman", Times, serif;
-    background-color: purple;
+    background-color: gray;
     color: gold;
 }
 header {
@@ -111,19 +111,6 @@ nav {
     display: flex;
     align-content: center;
     text-align: center;
-}
-.forecast #description {
-    text-transform: capitalize;
-    align-content: center;
-    text-align: center;
-}
-.forecast #temperature {
-    text-align: center;
-}
-.forecast #weatherGraphic {
-    display: block;
-    margin-bottom: auto;
-    margin-right: auto;
 }
 .hero-banner {
     display: block;

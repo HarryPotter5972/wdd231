@@ -89,7 +89,4 @@
     .sectionDiv{
         display: block;
     }
-    .forecast {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
 }

@@ -126,7 +126,7 @@ function forecastResults(forecastInfo) {
         forecastSection.appendChild(forecastImg);
         forecastSection.appendChild(forecastDescription);
         forecastSection.appendChild(forecastTemperature);
-        document.querySelector(".forecast").appendChild(forecastSection);
+        document.querySelector(".forcast").appendChild(forecastSection);
         
         index +=1;
         daysIndex +=1;
