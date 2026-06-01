@@ -105,13 +105,13 @@ nav {
     margin: .3rem 0
 }
 .weather #weatherGraphic {
-    display: block ;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 10rem;
 }
 .weather {
-    display: flex;
+    display: block;
     align-content: center;
     text-align: center;
 }
@@ -182,4 +182,8 @@ footer div a img {
 }
 .join {
     color: orange
+}
+.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
