@@ -187,3 +187,7 @@ footer div a img {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.navbar ul .currentPage {
+    background-color: orange;
+    color: purple;
+}
