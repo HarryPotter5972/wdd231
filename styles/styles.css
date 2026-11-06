@@ -58,7 +58,7 @@ nav {
     color: white;
     font-weight: 500;
     transition: .5s;
-    font-size: clamp(1rem, 2vin, 1.5rem);
+    font-size: clamp(1rem, 2vin, 1.5em);
 }
 .navbar a:hover, .navbar a:active, .classFilters a:hover, .classFilters a:active {
     text-decoration: underline double;
