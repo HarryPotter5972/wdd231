@@ -9,6 +9,7 @@ hamButton.addEventListener("click", () => {
 
 lastModified.innerHTML = new Date(document.lastModified);
 
+const weatherToday = document.querySelector(".weather");
 const myCity = document.querySelector("#town");
 const myDescription = document.querySelector("#description");
 const myTemperature = document.querySelector("#temperature");
@@ -90,12 +91,28 @@ const displayRandomBusinesses = (businesses) => {
 }
 
 function displayResults(weatherInfo) {
-    myDescription.innerHTML = weatherInfo.weather[0].description;
-    myTemperature.innerHTML = `${weatherInfo.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}@2x.png`;
-    myGraphic.setAttribute("src", iconsrc);
-    myGraphic.setAttribute("alt", weatherInfo.weather[0].description);
-    myGraphic.setAttribute("loading", "lazy");
+    const weatherNow = document.createElement("h2");
+    let weatherImg = document.createElement("img");
+    let weatherDesc = document.createElement("p");
+    let weatherTemp = document.createElement("p");
+    let iconsrc = `https://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}@2x.png`;
+
+    weatherImg.id = "weatherGraphic";
+    weatherDesc.id = "description";
+    weatherTemp.id = "temperature";
+
+    weatherNow.innerHTML= "Current Weather";
+    weatherDesc.innerHTML = weatherInfo.weather[0].description;
+    weatherTemp.innerHTML = `${weatherInfo.main.temp}&deg;F`;
+    
+    weatherImg.setAttribute("src", iconsrc);
+    weatherImg.setAttribute("alt", weatherInfo.weather[0].description);
+    weatherImg.setAttribute("loading", "lazy");
+
+    weatherToday.appendChild(weatherNow);
+    weatherToday.appendChild(weatherImg);
+    weatherToday.appendChild(weatherDesc);
+    weatherToday.appendChild(weatherTemp);
 }
 
 function forecastResults(forecastInfo) {
