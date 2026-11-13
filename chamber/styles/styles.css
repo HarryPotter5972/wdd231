@@ -89,9 +89,6 @@ nav {
 .show li {
     display: block;
 }
-.socialMedia {
-    grid-template-columns: 1fr 1fr 1fr;
-}
 .socialMedia a {
     display: flex;
     justify-content: center;
