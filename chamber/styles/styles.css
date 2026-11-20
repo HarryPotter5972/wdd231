@@ -48,7 +48,6 @@ h2, h3 {
 #hamburgerMenu {
     display:block;
     font-size: 1.5rem;
-    content:"X";
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
