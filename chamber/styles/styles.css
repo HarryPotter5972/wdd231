@@ -191,3 +191,14 @@ footer div a img {
     background-color: orange;
     color: purple;
 }
+dialog {
+    width: min(90%, 400px);
+    background-color: orange;
+    border: 1px solid purple;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
+}
+dialog::backdrop {
+    background-color: purple;
+}
