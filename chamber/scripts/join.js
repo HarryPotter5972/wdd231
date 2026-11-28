@@ -8,3 +8,6 @@ hamButton.addEventListener("click", () => {
     navbar.classList.toggle("show");
     hamButton.classList.toggle("show");
 });
+document.getElementById("myForm").addEventListener("submit", function () {
+    document.getElementById("timestamp").value = new Date().toISOString();
+});
