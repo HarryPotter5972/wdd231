@@ -13,18 +13,18 @@ if (submit) {
     document.getElementById("myForm").addEventListener("submit", function () {
         document.getElementById("timestamp").value = new Date().toISOString();
     });
+    const modal = document.querySelector("#myModal");
+    const openModal = document.querySelector(".open-button");
+    const closeModal = document.querySelector(".close-button");
+    openModal.addEventListener("click", () => {
+        modal.showModal();
+    });
+    closeModal.addEventListener("click", () => {
+        modal.close();
+    });
 }
 
-const modal = document.querySelector("#myModal");
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".close-button");
 
-openModal.addEventListener("click", () => {
-    modal.showModal();
-});
-closeModal.addEventListener("click", () => {
-    modal.close();
-});
 const params = new URLSearchParams(window.location.search);
 console.log(params);
 const fname = params.get("firstName");
