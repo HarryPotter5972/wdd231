@@ -8,12 +8,15 @@ hamButton.addEventListener("click", () => {
     navbar.classList.toggle("show");
     hamButton.classList.toggle("show");
 });
-document.getElementById("myForm").addEventListener("submit", function () {
-    document.getElementById("timestamp").value = new Date().toISOString();
-});
+const submit = document.querySelector("#timestamp");
+if (submit) {
+    document.getElementById("myForm").addEventListener("submit", function () {
+        document.getElementById("timestamp").value = new Date().toISOString();
+    });
+}
 
 const modal = document.querySelector("#myModal");
-const openModal = document.querySelector("open-button");
+const openModal = document.querySelector(".open-button");
 const closeModal = document.querySelector(".close-button");
 
 openModal.addEventListener("click", () => {
@@ -33,6 +36,6 @@ const orgname = params.get("organization-name");
 const sectionHeadTwo = document.createElement("h2");
 const sectionParagraph = document.createElement("p");
 sectionHeadTwo.textContent = "Form Submitted";
-sectionParagraph.innerHTML = `Thank you for your submittion, ${params.get("firstName")} ${params.get("lastName")} of the organization ${params.get("organization-name")}. Your email is ${params.get("email")}.`
+sectionParagraph.innerHTML = `Thank you for your submittion, ${params.get("firstName")} ${params.get("lastName")} of the organization ${params.get("organization-name")}. Your email is ${params.get("email")} and your phone number is ${params.get("mobilePhone")}.`;
 document.querySelector("#results").appendChild(sectionHeadTwo);
 document.querySelector("#results").appendChild(sectionParagraph);
