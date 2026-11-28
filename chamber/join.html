@@ -40,9 +40,9 @@
                         <legend>Applicant information:</legend>
                         <label for="firstName">First Name:<input type="text" name="firstName" id="firstName" title="fname" autocomplete="given-name" required></label>
                         <label for="lastName">Last Name:<input type="text" name="lastName" id="lastName" title="lname" autocomplete="family-name" required></label>
-                        <label for="organization">Organization Title:<input type="text" name="organization-title" id="organization" title="organizationTitle" autocomplete="organization-title" pattern="[A-Za-z \-]+"></label>
-                        <label for="email">Email:<input type="email" name="email" id="email" title="email" autocomplete="off" placeholder="name@gmail.com" required> </label>
-                        <label for="mobilePhone">Mobile Phone:<input type="tel" id="mobilePhone" title=""> </label>
+                        <label for="organization">Organization Title:<input type="text" name="organization-title" id="organization" title="organizationTitle" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}"></label>
+                        <label for="email">Email:<input type="email" name="email" id="email" title="email" autocomplete="email" placeholder="name@gmail.com" required> </label>
+                        <label for="mobilePhone">Mobile Phone:<input type="tel" id="mobilePhone" required> </label>
                         <label for="businessName">Business Name: <input type="text" id="businessName" required></label>
                     </fieldset>
                     <fieldset>
