@@ -11,7 +11,7 @@
         <script src="scripts/join.js" defer></script>
         <meta property="og:title" content="Riverton Chamber of Commerse | Join">
         <meta property="og:description" content="My chamber of commerse site for my WDD231 class for college">
-        <meta property="og:url" content="htpps://harrypotter5972.github.io/wdd231/chanber/join.html">
+        <meta property="og:url" content="htpps://harrypotter5972.github.io/wdd231/chamber/join.html">
         <meta property="og:image" content="https://harrypotter5972.github.io/wdd231/chamber/images/resized_pikachu.jpg">
         <link rel="shortcut icon" href="images/pikachu.ico">
         <link rel="icon" href="images/pikachu.ico">
@@ -38,11 +38,11 @@
                 <form method="get" action="thankyou.html">
                     <fieldset>
                         <legend>Applicant information:</legend>
-                        <label for="firstName">First name:<input type="text" name="firstName" id="firstName" autocomplete="given-name" required></label>
-                        <label for="lastName">Last Name:<input type="text" name="lastName" id="lastName" autocomplete="family-name" required></label>
-                        <label for="organization">Organization Title:<input type="text" name="organization-title" id="organization" autocomplete="organization-title"></label>
-                        <label for="email">Email:<input type="email" name="email" id="email" autocomplete="off" required> </label>
-                        <label for="mobilePhone">Mobile Phone:<input type="tel" id="mobilePhone" > </label>
+                        <label for="firstName">First Name:<input type="text" name="firstName" id="firstName" title="fname" autocomplete="given-name" required></label>
+                        <label for="lastName">Last Name:<input type="text" name="lastName" id="lastName" title="lname" autocomplete="family-name" required></label>
+                        <label for="organization">Organization Title:<input type="text" name="organization-title" id="organization" title="organizationTitle" autocomplete="organization-title" pattern="[A-Za-z \-]+"></label>
+                        <label for="email">Email:<input type="email" name="email" id="email" title="email" autocomplete="off" placeholder="name@gmail.com" required> </label>
+                        <label for="mobilePhone">Mobile Phone:<input type="tel" id="mobilePhone" title=""> </label>
                         <label for="businessName">Business Name: <input type="text" id="businessName" required></label>
                     </fieldset>
                     <fieldset>
