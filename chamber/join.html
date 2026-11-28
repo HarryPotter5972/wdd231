@@ -42,8 +42,8 @@
                         <label for="lastName">Last Name:<input type="text" name="lastName" id="lastName" title="lname" autocomplete="family-name" required></label>
                         <label for="organization">Organization Title:<input type="text" name="organization-title" id="organization" title="organizationTitle" autocomplete="organization-title" pattern="[A-Za-z -]{7,}"></label>
                         <label for="email">Email:<input type="email" name="email" id="email" title="email" autocomplete="email" placeholder="name@gmail.com" required> </label>
-                        <label for="mobilePhone">Mobile Phone:<input type="tel" id="mobilePhone" required> </label>
-                        <label for="businessName">Business Name: <input type="text" id="businessName" required></label>
+                        <label for="mobilePhone">Mobile Phone:<input type="tel" name="mobilephone" id="mobilePhone" title="Mobile Phone" autocomplete="tel" required> </label>
+                        <label for="businessName">Business Name: <input type="text" id="businessName" autocomplete="organization" required></label>
                     </fieldset>
                     <fieldset>
                         <legend>Business Membership Level: </legend>
@@ -56,8 +56,9 @@
                     </fieldset>
                     <fieldset>
                         <legend>Business description</legend>
-                        <label for="description"><textarea name="description" id="description"></textarea></label>
+                        <label for="description"><textarea name="description" id="description" title="Orginization Description"></textarea></label>
                     </fieldset>
+                    <label for="timestamp"><input type="datetime-local" id="timestamp" name="timestamp"></label>
                     <input type="Submit" value="Submit">
                 </form>
                 <section>
